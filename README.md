@@ -44,7 +44,13 @@ elasticsearch:
   port: 9300
   clustername: js-cluster
 ~~~
-~~~
-add @EnableElasticsearchRepositories
-create ElasticsearchTemplate bean
-~~~
+## in default class
+add 
+@EnableElasticsearchRepositories
+
+create 
+ElasticsearchTemplate bean
+
+## repository
+extends 
+ElasticsearchCrudRepository
