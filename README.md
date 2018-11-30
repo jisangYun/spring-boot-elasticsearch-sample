@@ -4,12 +4,18 @@
 ## elasticsearch official image used
 https://hub.docker.com/_/elasticsearch/
 ## docker run
-'''docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "cluster.name=js-cluster" elasticsearch:6.5.0'''
+~~~
+docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "cluster.name=js-cluster" elasticsearch:6.5.0
+~~~
 ### env
 version : 6.5.0
+
 api port : 9200
+
 node port : 9300
+
 discovery.type=single-node
+
 cluster.name=js-cluster
 
 # spring boot
@@ -31,7 +37,7 @@ cluster.name=js-cluster
     <version>${elasticsearch.version}</version>
 </dependency>
 ~~~
-## configure
+## application.yml
 ~~~
 elasticsearch:
   host: localhost
